@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Playfair Display;
+}
+
+header{
+	background: url("https://static.wixstatic.com/media/cc7921_9755b6ac80094c578f61db4eccae844c~mv2_d_4814_3172_s_4_2.png/v1/fill/w_820,h_540,al_c,q_85,usm_0.66_1.00_0.01/RG-LOGO%20(2).webp") no-repeat ;
+	height: 100vh;
+	background-size: no;
+	background-position: center;
+}
+
+ul{
+	list-style-type: none;
+	float: left;
+	margin-top: 25px;
+	font-size: 20px;
+}
+
+ul li{
+	display: inline-block;
+}
+
+ul li a{
+	text-decoration:none;
+	color: #002366;
+	padding: 5px 20px;
+	border:2px solid #c6a242;
+	border-radius: 25px 	0px;
+	transition: 0.9s ease;	
+}
+
+ul li a:hover{
+	background-color: #c6a242;
+}
+
+ul li.active a{
+	background-color: #c6a242;
+}
+
+.image{
+	margin-top: 50px;
+
+}
+
+.colors{
+	color: #c6a242;
+	font-size: 40px;
+	margin-top: 100px;
+}
+
+.img{
+	cursor: pointer;
+	margin-top: 30px;
+}
+
+
+.search_box{
+	position: absolute;
+	top: 2%;
+	left: 75%;
+	transform: transition(-50%,-50%);
+	background-color: #fff;
+	height:40px;
+	border-radius: 25px;
+	padding: 6px;
+	border: 2px solid #c6a242;
+}
+
+.input_box{
+	border: none;
+	outineL: none;
+	background-color:  #fff;
+	float: left;
+	padding: 0px;
+	color: #002366;
+	font-size: 16px;
+	transition: 0.3s all;
+	line-height: 40px;
+	width:  0;
+}
+
+.btn{
+	color: #002366;
+	float: right;
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.search_box:hover .input_box{
+	width: 240px;
+	padding: 0 6px;
+	border: none;
+	outline: none;
+}
+
+.search_box:hover .btn{
+	background-color: #c6a242;
+}

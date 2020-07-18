@@ -1,0 +1,26 @@
+{
+    "name": "RG",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gruntfile.js",
+    "dependencies": {
+      "bootstrap": "^4.5.0",
+      "font-awesome": "^4.7.0",
+      "jquery": "^3.5.1",
+      "popper.js": "^1.16.1"
+    },
+    "devDependencies": {
+      "cssmin": "^0.4.3",
+      "grunt": "^1.2.1",
+      "grunt-browser-sync": "^2.2.0",
+      "grunt-contrib-watch": "^1.1.0",
+      "grunt-sass": "^2.1.0"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin eat.html -d dist --htmlmin -o dist/eat.html && usemin picture.html -d dist --htmlmin -o dist/picture.html && usemin social.html -d dist --htmlmin -o dist/social.html && usemin workout.html -d dist --htmlmin -o dist/workout.html",
+      "build": "npm run usemin"
+    },
+    "author": "",
+    "license": "ISC"
+  }
